@@ -2,9 +2,8 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             double N = 3.14159;
             double R = double.Parse(Console.ReadLine());
 

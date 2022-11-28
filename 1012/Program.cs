@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string[] input = Console.ReadLine().Split();
             double A = double.Parse(input[0]);
@@ -20,7 +20,6 @@
             Console.WriteLine($"TRAPEZIO: {areaTrapezio:F3}");
             Console.WriteLine($"QUADRADO: {areaQuadrado:F3}");
             Console.WriteLine($"RETANGULO: {areaRetangulo:F3}");
-
         }
     }
 }

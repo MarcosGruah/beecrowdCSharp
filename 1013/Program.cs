@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string[] input = Console.ReadLine().Split();
             int A = int.Parse(input[0]);
@@ -13,7 +13,6 @@
             int highestNumberC = (C + highestNumberAB + (Math.Abs(C - highestNumberAB))) / 2;
 
             Console.WriteLine($"{highestNumberC} eh o maior");
-
         }
     }
 }

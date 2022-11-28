@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int codigoFuncionario = int.Parse(Console.ReadLine());
             int horasTrabalhadas = int.Parse(Console.ReadLine());

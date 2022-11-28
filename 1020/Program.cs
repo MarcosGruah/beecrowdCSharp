@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int input = int.Parse(Console.ReadLine());
             int ano = input / 365;
@@ -14,7 +14,6 @@
             Console.WriteLine($"{ano} ano(s)");
             Console.WriteLine($"{mes} mes(es)");
             Console.WriteLine($"{dia} dia(s)");
-
         }
     }
 }

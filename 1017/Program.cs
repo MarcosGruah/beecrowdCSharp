@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             double tempoViagemHoras = double.Parse(Console.ReadLine());
             double velocidadeMediaKm = double.Parse(Console.ReadLine());

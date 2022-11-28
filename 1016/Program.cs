@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // 1h Distancia = 30.
             // 60min = Dist(30km)
@@ -11,8 +11,6 @@
             int inputDistance = int.Parse(Console.ReadLine());
             int result = (60 * inputDistance) / 30;
             Console.WriteLine($"{result} minutos");
-
-
         }
     }
 }

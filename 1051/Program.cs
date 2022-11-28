@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             double input = double.Parse(Console.ReadLine());
             double[] taxTiers = { 0, 0.08, 0.18, 0.28 };
