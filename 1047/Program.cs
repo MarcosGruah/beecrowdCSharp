@@ -6,20 +6,21 @@
         {
             int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(), S => int.Parse(S));
             DateTime startTime = new DateTime(2022, 01, 01, inputNumbers[0], inputNumbers[1], 0);
-            DateTime endTime;
+            DateTime endTime = new DateTime(2022, 01, 01, inputNumbers[2], inputNumbers[3], 0);
 
-            if (inputNumbers[2] < inputNumbers[0])
+            if (startTime == endTime)
             {
-                endTime = new DateTime(2022, 01, 02, inputNumbers[2], inputNumbers[3], 0);
+                Console.WriteLine("O JOGO DUROU 24 HORA(S)");
+            }
+            else if (endTime < startTime)
+            {
+                endTime = new DateTime(2022, 01, 02, inputNumbers[1], 0, 0);
+                Console.WriteLine($"O JOGO DUROU {(endTime - startTime).Hours} HORA(S) E {(endTime - startTime).Minutes} MINUTO(S)");
             }
             else
             {
-                endTime = new DateTime(2022, 01, 02, inputNumbers[2], inputNumbers[3], 0);
+                Console.WriteLine($"O JOGO DUROU {(endTime - startTime).Hours} HORA(S) E {(endTime - startTime).Minutes} MINUTO(S)");
             }
-
-            TimeSpan matchDuration = endTime - startTime;
-
-            Console.WriteLine($"O JOGO DUROU {(matchDuration.Days * 24) + matchDuration.Hours} HORA(S) E {matchDuration.Minutes} MINUTO(S)");
         }
     }
 }
