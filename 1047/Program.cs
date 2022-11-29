@@ -10,11 +10,11 @@
 
             if (startTime == endTime)
             {
-                Console.WriteLine("O JOGO DUROU 24 HORA(S)");
+                Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
             }
             else if (endTime < startTime)
             {
-                endTime = new DateTime(2022, 01, 02, inputNumbers[1], 0, 0);
+                endTime = new DateTime(2022, 01, 02, inputNumbers[2], inputNumbers[3], 0);
                 Console.WriteLine($"O JOGO DUROU {(endTime - startTime).Hours} HORA(S) E {(endTime - startTime).Minutes} MINUTO(S)");
             }
             else

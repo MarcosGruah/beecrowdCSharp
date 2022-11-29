@@ -16,7 +16,15 @@
                 new { ddd = 31, city = "Belo Horizonte" } };
 
             var output = areaCodes.SingleOrDefault(item => item.ddd == input);
-            Console.WriteLine(output.city);
+
+            if (output == null)
+            {
+                Console.WriteLine("DDD nao cadastrado");
+            }
+            else
+            {
+                Console.WriteLine(output.city);
+            }
         }
     }
 }
