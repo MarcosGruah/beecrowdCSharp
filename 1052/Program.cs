@@ -21,7 +21,6 @@
 
             var output = areaCodes.SingleOrDefault(item => item.month == input);
             Console.WriteLine(output.name);
-
         }
     }
 }
