@@ -1,4 +1,4 @@
-﻿namespace _1046
+﻿namespace _1047
 {
     internal class Program
     {
