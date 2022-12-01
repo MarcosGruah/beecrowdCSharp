@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             bool isActive = true;
             do
@@ -22,7 +22,6 @@
                 {
                     Console.WriteLine("Crescente");
                 }
-
             } while (isActive);
         }
     }
